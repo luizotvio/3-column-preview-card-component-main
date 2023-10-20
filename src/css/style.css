@@ -8,6 +8,8 @@
     --Very-light-gray: hsl(0, 0%, 95%);
 }
 
+/* reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,40 +17,90 @@
     box-sizing: border-box;
 }
 
-main {
-    width: 50vw;
+body {
+    font-family: 'Lexend Deca';
     height: 100vh;
-    padding: ;
+}
+/* main */
+
+main {
+    display: flex;
+    max-width: 950px;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+section {
+    max-width: 950px;
+    max-height: 530px;
+    margin-top: 20%;
     display: grid;
-    grid-template-columns: 1fr;
- 
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-main section .sedan-card {
+article.sedan-card {
     background-color: var(--Bright-orange);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
-main section .suv-card {
+article.suv-card {
     background-color: var(--Dark-cyan);
 }
 
-main section .luxury-card {
+article.luxury-card {
     background-color: var(--Very-dark-cyan);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
-section .btn {
-    padding: 0.5rem;
-    border-radius: 15px;
-    border: none;
+article img {
+    padding: 25px;
+    margin: 20px 0;
+}
+article h2 {
+    padding: 25px;
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 40px;
+}
+
+article p {
+    padding: 25px;
+    margin: 20px 0;
+    color: var(--Transparent-white);
+}
+
+/* buttons */
+
+article button  {
+    margin: 25px;
+    color: var(--Very-light-gray);
+    padding: 15px 30px;
+    border: 2px solid;
+    border-radius: 25px;
     cursor: pointer;
 }
 
- footer .attribution {
+.btn-sedan {
+    background-color: var(--Bright-orange);
+}
+.btn-suv {
+    background-color: var(--Dark-cyan);
+}
+.btn-luxury{
+    background-color: var(--Very-dark-cyan);
+}
+
+/* footer */
+
+.attribution {
     font-size: 11px;
-    text-align: center;
     color: hsl(228, 45%, 44%);
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
 }
