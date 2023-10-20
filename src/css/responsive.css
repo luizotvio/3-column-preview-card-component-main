@@ -1,0 +1,14 @@
+@media (max-width: 960px) {
+
+    main {
+        height: auto;
+    }
+    section {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        grid-template-columns: 1fr;
+        width: 80%;
+        min-width: 410px;
+        max-height: 1600px;
+    }
+}
