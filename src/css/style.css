@@ -76,21 +76,39 @@ article p {
 
 article button  {
     margin: 25px;
-    color: var(--Very-light-gray);
     padding: 15px 30px;
     border: 2px solid;
     border-radius: 25px;
     cursor: pointer;
 }
 
+
 .btn-sedan {
-    background-color: var(--Bright-orange);
+    background-color: var(--Very-light-gray);
+    color: var(--Bright-orange);
+
 }
 .btn-suv {
-    background-color: var(--Dark-cyan);
+    background-color: var(--Very-light-gray);
+    color: var(--Dark-cyan);
 }
 .btn-luxury{
+    background-color: var(--Very-light-gray);
+    color: var(--Very-dark-cyan);
+}
+
+.btn-sedan:hover {
+    background-color: var(--Bright-orange);
+    color: var(--Very-light-gray);
+
+}
+.btn-suv:hover {
+    background-color: var(--Dark-cyan);
+    color: var(--Very-light-gray);
+}
+.btn-luxury:hover {
     background-color: var(--Very-dark-cyan);
+    color: var(--Very-light-gray);
 }
 
 /* footer */
