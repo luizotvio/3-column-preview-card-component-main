@@ -20,6 +20,7 @@
 body {
     font-family: 'Lexend Deca';
     height: 100vh;
+    background-color: var(--Very-light-gray);
 }
 /* main */
 
